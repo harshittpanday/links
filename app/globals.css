@@ -71,9 +71,18 @@ h2 {
 }
 .link-row:focus-visible { outline: 2px solid #a54c42; outline-offset: 4px; }
 footer {
-  display: flex; gap: 0.5rem; margin-top: auto; padding: 5rem 0 0.25rem;
-  color: #65625d; font-size: 0.7rem; letter-spacing: 0.11em; text-transform: lowercase;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  margin-top: auto; padding: 5rem 0 0.25rem; color: #65625d;
+  font-size: 0.75rem; letter-spacing: 0.04em;
 }
+footer p { margin: 0; }
+footer a {
+  color: #77736d; text-decoration: none;
+  transition: color 150ms ease;
+}
+footer a span { display: inline-block; margin-left: 0.2em; }
+footer a:hover, footer a:focus-visible { color: #b6b2aa; }
+footer a:focus-visible { outline: 1px solid #a54c42; outline-offset: 4px; }
 
 @media (min-width: 640px) {
   .page-shell { padding: 2.5rem; }
