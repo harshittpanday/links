@@ -1,9 +1,8 @@
 const links = [
-  { number: '01', title: 'Portfolio', description: 'Personal website', href: '#' },
-  { number: '02', title: 'GitHub', description: 'Projects & open source', href: '#' },
-  { number: '03', title: 'LinkedIn', description: 'Professional profile', href: '#' },
-  { number: '04', title: 'X', description: 'Notes & updates', href: '#' },
-  { number: '05', title: 'Email', description: 'Get in touch', href: 'mailto:hello@example.com' },
+  { number: '01', title: 'Portfolio', description: 'Personal website', href: 'https://harshittpanday.is-a.dev/' },
+  { number: '02', title: 'GitHub', description: 'Projects & open source', href: 'https://github.com/harshittpanday' },
+  { number: '03', title: 'LinkedIn', description: 'Professional profile', href: 'https://www.linkedin.com/in/harshit-r-pandey-02842b410/' },
+  { number: '04', title: 'X', description: 'Posts & updates', href: 'https://x.com/harshittpandayy' },
 ] as const;
 
 export default function Home() {
@@ -27,7 +26,13 @@ export default function Home() {
             <ol className="link-list">
               {links.map((link) => (
                 <li key={link.number}>
-                  <a href={link.href} className="link-row" aria-label={`${link.title} — ${link.description}`}>
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link-row"
+                    aria-label={`${link.title} — ${link.description} (opens in a new tab)`}
+                  >
                     <span className="link-number" aria-hidden="true">{link.number}</span>
                     <span className="link-copy">
                       <span className="link-title">{link.title}</span>
@@ -42,7 +47,15 @@ export default function Home() {
         </section>
 
         <footer>
-          <span>harshit</span><span aria-hidden="true">/</span><span>2026</span>
+          <p>© 2026 Harshit Pandey</p>
+          <a
+            href="https://instagram.com/harshittpanday"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram (opens in a new tab)"
+          >
+            Instagram <span aria-hidden="true">↗</span>
+          </a>
         </footer>
       </div>
     </main>
