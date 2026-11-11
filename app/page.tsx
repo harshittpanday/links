@@ -5,6 +5,7 @@ const links = [
   { number: '02', title: 'GitHub', description: 'Code & open source', href: 'https://github.com/harshittpanday', icon: 'github' },
   { number: '03', title: 'LinkedIn', description: 'Professional profile', href: 'https://www.linkedin.com/in/harshit-r-pandey-02842b410/', icon: 'linkedin' },
   { number: '04', title: 'X', description: 'Posts & updates', href: 'https://x.com/harshittpandayy', icon: 'x' },
+  { number: '05', title: 'Discord', description: 'Chat with me', href: 'https://discord.com/invite/atWfHfwjYy', icon: 'discord' },
 ] as const;
 
 type Platform = (typeof links)[number]['icon'];
