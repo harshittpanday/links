@@ -1,11 +1,13 @@
 import { ThemeToggle } from './theme-toggle';
 
+
 const links = [
   { number: '01', title: 'Portfolio', description: 'Work, projects & about', href: 'https://harshittpanday.is-a.dev/', icon: 'portfolio' },
-  { number: '02', title: 'GitHub', description: 'Code & open source', href: 'https://github.com/harshittpanday', icon: 'github' },
-  { number: '03', title: 'LinkedIn', description: 'Professional profile', href: 'https://www.linkedin.com/in/harshit-r-pandey-02842b410/', icon: 'linkedin' },
-  { number: '04', title: 'X', description: 'Posts & updates', href: 'https://x.com/harshittpandayy', icon: 'x' },
-  { number: '05', title: 'Discord', description: 'Chat with me', href: 'https://discord.com/invite/atWfHfwjYy', icon: 'discord' },
+  { number: '02', title: 'X', description: 'Posts & updates', href: 'https://x.com/harshittpandayy', icon: 'twitter' },
+  { number: '03', title: 'GitHub', description: 'Code & open source', href: 'https://github.com/harshittpanday', icon: 'github' },
+  { number: '04', title: 'Discord', description: 'Chat with me', href: 'https://discord.com/invite/atWfHfwjYy', icon: 'discord' },
+  { number: '05', title: 'LinkedIn', description: 'Professional profile', href: 'https://www.linkedin.com/in/harshit-r-pandey-02842b410/', icon: 'linkedin' },
+  { number: '06', title: 'mail', description: 'harshittpanday@gmail.com', href: 'mailto:harshittpanday@gmail.com', icon: 'mail' },
 ] as const;
 
 type Platform = (typeof links)[number]['icon'];
